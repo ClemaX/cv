@@ -19,3 +19,12 @@ multithread
 POO
 GDB
 LLDB
+monopage
+pong
+IRC
+Cub3D
+Minishell
+bash
+pthread
+termcaps
+minilibx

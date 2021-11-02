@@ -1,18 +1,24 @@
 %% start of file `cv.tex'.
 \documentclass[11pt, a4paper, sans]{moderncv}
 
+% Theme
 \moderncvtheme[blue]{classic}
 
 \usepackage[english,ngerman,french]{babel}
 \frenchsetup{StandardItemLabels=true}
 
+% Encoding
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{microtype}
 
-\usepackage[scale=0.8]{geometry}
+% Geometry
+\usepackage[scale=0.8,vscale=0.85]{geometry}
+\settowidth{\hintscolumnwidth}{Décembre 2020}
+\recomputelengths
 
+% Identity
 \usepackage{ClementHamada}
 
 \title{Architecte du numérique}
@@ -46,12 +52,23 @@
 
 
 \section{Expériences}
-\cventry{2012}{Découverte de la programmation}{Le site du zéro}{}{}{C++/Java}
-\cventry{2013}{Montage de mon premier PC}{Tour ATX}{}{}{}
-\cventry{2014}{Découverte de Linux et Hackintosh}{}{}{}{Raspberry Pi, Serveur WordPress, Scripts shell}
-\cventry{2015}{Pilotage d'un ruban LED RGB par HTTP}{}{}{}{Développement d'un backend et d'interfaces web et infrarouge sur Raspberry Pi}
-\cventry{2016}{Stage de 3e}{i-mation}{Allemagne}{}{Automatisation de chaînes de production grâce à la vision par ordinateur}
-\cventry{2017}{Montage d'une imprimante 3D}{RepRap/i3}{}{}{Slicing G-Code, programmation d'objets 3D paramétriques avec OpenSCAD}
-\cventry{2018}{Découverte du développement d'applications mobiles}{Android, IOS}{}{}{Android Studio, Swift, Flutter}
+%\cventry{Octobre 2021}{\foreignlanguage{english}{snow-crash}}{Introduction a la sécurité informatique}{}{}{Exploitation d'exécutables, ingénierie inverse}
+\cventry{Aout 2021}{Transcendance}{Jeu multijoueur dans le navigateur web}{}{}{Node.js, React, NestJS, PostgreSQL, TypeORM}
+\cventry{Juin 2021}{Serveur IRC}{Serveur de messagerie respectant le protocole IRC}{}{}{C++, Socket}
+\cventry{Mars 2021}{Piscine C++}{Exercices visant l'apprentissage du langage C++}{}{}{Programmation orientée objets}
+\cventry{Février 2021}{\foreignlanguage{english}{Philosophers}}{Problème de partage de ressource en \foreignlanguage{english}{multithreading}}{}{}{C, pthread}
+\cventry{Décembre 2020}{Minishell}{Shell simple ressemblant a bash}{}{}{C, termcaps}
+\cventry{Février 2020}{Cub3D}{Moteur de jeu utilisant le \foreignlanguage{english}{ray-casting}}{}{}{C, minilibx}
+\cventry{Aout 2019}{Piscine C}{Épreuve d'un mois visant l'apprentissage du langage C}{}{}{}
+
+
+
+% \cventry{2012}{Découverte de la programmation}{Le site du zéro}{}{}{C++/Java}
+% \cventry{2013}{Montage de mon premier PC}{Tour ATX}{}{}{}
+% \cventry{2014}{Découverte de Linux et Hackintosh}{}{}{}{Raspberry Pi, Serveur WordPress, Scripts shell}
+% \cventry{2015}{Pilotage d'un ruban LED RGB par HTTP}{}{}{}{Développement d'un backend et d'interfaces web et infrarouge sur Raspberry Pi}
+% \cventry{2016}{Stage de 3e}{i-mation}{Allemagne}{}{Automatisation de chaînes de production grâce à la vision par ordinateur}
+% \cventry{2017}{Montage d'une imprimante 3D}{RepRap/i3}{}{}{Slicing G-Code, programmation d'objets 3D paramétriques avec OpenSCAD}
+% \cventry{2018}{Découverte du développement d'applications mobiles}{Android, IOS}{}{}{Android Studio, Swift, Flutter}
 
 \end{document}
