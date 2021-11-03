@@ -15,7 +15,6 @@ OpenSCAD
 Slicing
 IOS
 mation
-multithread
 POO
 GDB
 LLDB
@@ -28,3 +27,6 @@ bash
 pthread
 termcaps
 minilibx
+OAuth
+multithreading
+phpMyAdmin
