@@ -8,7 +8,7 @@ compiler="${3:-latexmk}"
 args="${4:--pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode}"
 extra_system_packages="${5:-}"
 
-png_density=600
+png_density=300
 
 if [ -n "$extra_system_packages" ]; then
   apt-get update
