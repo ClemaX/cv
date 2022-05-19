@@ -18,6 +18,8 @@
 \settowidth{\hintscolumnwidth}{Décembre 2020}
 \recomputelengths
 
+\newcommand{\inputsection}[1] {\input{sections/#1.tex}}
+
 % Identity
 \usepackage{ClementHamada}
 
@@ -29,45 +31,10 @@
 
 \makecvtitle
 
-\section{Compétences}
-\cvlistitem{Très bonne capacité de communication. Trilingue français, anglais et allemand.}
-\cvlistitem{Capacité à travailler en groupe ainsi qu'en autonomie.}
-\cvlistitem{Extrêmement motivé pour développer de nouvelles compétences.}
-\cvlistitem{Sociable, sérieux et créatif.}
+\inputsection{skills}
 
-\subsection{Développement}
-\cvcomputer{Langages}{C, C++, Python, Shell, Make}{Web}{HTML, CSS, JS, OAuth, TypeScript}
-\cvcomputer{Frameworks}{NestJS, React, TypeORM, Flutter}{BDD}{MySQL, PostgreSQL, InfluxDB}
-\cvcomputer{Méthodes}{POO, MVC, multithreading, unit-test}{Outils}{Node.js, Git, GitHub, GDB/LLDB}
+\inputsection{education}
 
-\subsection{Administration}
-\cvcomputer{Web}{Nginx, VsFTPd, Graphana}{Sécurité}{SSL, HTTPS, SSH, PGP/GPG}
-\cvcomputer{Systèmes d'exploitation}{Linux (Debian, Ubuntu, Arch),\\macOS, Windows}{Virtualisation}{Docker, Compose, Kubernetes,\\VirtualBox, Amazon AWS}
-
-
-\section{Formations}
-\cventry{2019--2022}{Architecte du numérique}{École 42}{Lyon(69)}{France}{}
-\cventry{2019}{Baccalauréat}{}{\foreignlanguage{ngerman}{Spaichingen}}{Allemagne}{}
-\cventry{2014}{Brevet des collèges}{}{Groisy(74)}{France}{}
-
-
-\section{Expériences}
-\cventry{Mai 2022}{\foreignlanguage{english}{Woody-Woodpacker}}{\foreignlanguage{english}{Packer} d'executables ELF}{}{}{Infection d'exécutables, cryptage et decryptage au lancement}
-\cventry{Octobre 2021}{\foreignlanguage{english}{Snow-Crash}}{Introduction a la sécurité informatique}{}{}{Exploitation d'exécutables, ingénierie inverse}
-\cventry{Aout 2021}{Transcendance}{Jeu multijoueur dans le navigateur web}{}{}{Node.js, React, NestJS, PostgreSQL, TypeORM, Socket.io, OAuth}
-% \cventry{Juin 2021}{Serveur IRC}{Serveur de messagerie respectant le protocole IRC}{}{}{C++, Socket}
-% \cventry{Mars 2021}{Piscine C++}{Exercices visant l'apprentissage du langage C++}{}{}{Programmation orientée objets}
-% \cventry{Février 2021}{\foreignlanguage{english}{Philosophers}}{Problème de partage de ressource en \foreignlanguage{english}{multithreading}}{}{}{C, pthread}
-% \cventry{Décembre 2020}{Minishell}{Shell basique imitant le comportement de bash}{}{}{C, termcaps}
-% \cventry{Novembre 2020}{Services}{Orchestration d'un cluster virtuel composé de plusieurs services}{}{}{Kubernetes, Docker, WordPress, phpMyAdmin, FTP, Graphana, Nginx, reverse-proxy}
-% \cventry{Février 2020}{Cub3D}{Moteur de jeu utilisant le \foreignlanguage{english}{ray-casting}}{}{}{C, minilibx}
-% \cventry{Aout 2019}{Piscine C}{Épreuve d'un mois visant l'apprentissage du langage C}{}{}{Processus de sélection pour l'admission a l'école 42}
-% \cventry{2018}{Découverte du développement d'applications mobiles}{Android, IOS}{}{}{Android Studio, Swift, Flutter}
-\cventry{2017}{Montage d'une imprimante 3D}{RepRap/i3}{}{}{Slicing G-Code, programmation d'objets 3D paramétriques avec OpenSCAD}
-% \cventry{2016}{Stage de 3e}{i-mation}{Allemagne}{}{Automatisation de chaînes de production grâce à la vision par ordinateur}
-\cventry{2015}{Pilotage d'un ruban LED RGB par HTTP}{}{}{}{Développement d'un backend REST et d'interfaces web et infrarouge sur Raspberry Pi}
-\cventry{2014}{Découverte de Linux et Hackintosh}{}{}{}{Raspberry Pi, Serveur WordPress, Scripts shell}
-\cventry{2013}{Montage de mon premier PC}{Tour ATX}{}{}{}
-\cventry{2012}{Découverte de la programmation}{Le site du zéro}{}{}{C++/Java}
+\inputsection{experiences}
 
 \end{document}
