@@ -6,5 +6,7 @@
         "*.log": true,
         "*.out": true,
         "*.synctex.gz": true
-    }
+    },
+    "ltex.additionalRules.motherTongue": "de-DE",
+    "ltex.language": "de-DE"
 }
