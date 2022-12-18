@@ -2,7 +2,7 @@
 
 set -ue
 
-root_file="${1:-cv.tex}"
+root_file="${1:-cv-english.tex}"
 working_directory="${2:-$PWD}"
 compiler="${3:-latexmk}"
 args="${4:--pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode}"

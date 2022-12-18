@@ -16,10 +16,24 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: LaTeX compilation
+      - name: LaTeX compilation (english)
         uses: dante-ev/latex-action@2021-A
         with:
-          root_file: cv.tex
+          root_file: cv-english.tex
+          extra_system_packages: imagemagick
+          entrypoint: ./release.sh
+
+      - name: LaTeX compilation (french)
+        uses: dante-ev/latex-action@2021-A
+        with:
+          root_file: cv-french.tex
+          extra_system_packages: imagemagick
+          entrypoint: ./release.sh
+      
+      - name: LaTeX compilation (german)
+        uses: dante-ev/latex-action@2021-A
+        with:
+          root_file: cv-german.tex
           extra_system_packages: imagemagick
           entrypoint: ./release.sh
 
@@ -28,12 +42,20 @@ jobs:
         with:
           name: cv
           path: |
-            cv.pdf
-            cv.png
+            cv-english.pdf
+            cv-english.png
+            cv-french.pdf
+            cv-french.png
+            cv-german.pdf
+            cv-german.png
 
-      - name: Release PDF
+      - name: Release PDF and PNG files
         uses: softprops/action-gh-release@v0.1.13
         with:
           files: |
-            cv.pdf
-            cv.png
+            cv-english.pdf
+            cv-english.png
+            cv-french.pdf
+            cv-french.png
+            cv-german.pdf
+            cv-german.png
