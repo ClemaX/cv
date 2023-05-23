@@ -17,21 +17,21 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: LaTeX compilation (english)
-        uses: dante-ev/latex-action@2021-A
+        uses: dante-ev/latex-action@2023-A
         with:
           root_file: cv-english.tex
           extra_system_packages: imagemagick
           entrypoint: ./release.sh
 
       - name: LaTeX compilation (french)
-        uses: dante-ev/latex-action@2021-A
+        uses: dante-ev/latex-action@2023-A
         with:
           root_file: cv-french.tex
           extra_system_packages: imagemagick
           entrypoint: ./release.sh
       
       - name: LaTeX compilation (german)
-        uses: dante-ev/latex-action@2021-A
+        uses: dante-ev/latex-action@2023-A
         with:
           root_file: cv-german.tex
           extra_system_packages: imagemagick
