@@ -38,7 +38,7 @@ jobs:
           entrypoint: ./release.sh
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2.2.4
+        uses: actions/upload-artifact@v3.1.2
         with:
           name: cv
           path: |
@@ -50,7 +50,7 @@ jobs:
             cv-german.png
 
       - name: Release PDF and PNG files
-        uses: softprops/action-gh-release@v0.1.13
+        uses: softprops/action-gh-release@v0.1.15
         with:
           files: |
             cv-english.pdf
