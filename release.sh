@@ -31,5 +31,12 @@ for document in *.pdf
 do
   name=$(basename "$document" .pdf)
 
-  gs -dSAFER -r"$png_density" -sDEVICE=png16m -o "$name.png" "$document"
+  gs \
+    -dSAFER \
+    -dTextAlphaBits=4 \
+    -dGraphicsAlphaBits=4 \
+    -r"$png_density" \
+    -sDEVICE=png16m \
+    -o "$name.png" \
+    "$document"
 done
