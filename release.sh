@@ -27,4 +27,9 @@ touch .timestamp
 "$compiler" $args "$root_file"
 
 # Build pngs
-find . -name "*.pdf" -maxdepth 1 -newer .timestamp -exec mogrify -format png -density $png_density -background white -flatten {} +
+for document in *.pdf
+do
+  name=$(basename "$document" .pdf)
+
+  gs -dSAFER -r"$png_density" -sDEVICE=pngalpha -o "$name.png" "$document"
+done
