@@ -42,20 +42,12 @@ jobs:
         with:
           name: cv
           path: |
-            cv-english.pdf
-            cv-english.png
-            cv-french.pdf
-            cv-french.png
-            cv-german.pdf
-            cv-german.png
+            cv-*.pdf
+            cv-*.png
 
       - name: Release PDF and PNG files
         uses: softprops/action-gh-release@v2.4.1
         with:
           files: |
-            cv-english.pdf
-            cv-english.png
-            cv-french.pdf
-            cv-french.png
-            cv-german.pdf
-            cv-german.png
+            cv-*.png
+            cv-*.pdf
