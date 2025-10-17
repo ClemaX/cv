@@ -37,6 +37,6 @@ do
     -dGraphicsAlphaBits=4 \
     -r"$png_density" \
     -sDEVICE=png16m \
-    -o "$name.png" \
+    -o "$name-%d.png" \
     "$document"
 done
