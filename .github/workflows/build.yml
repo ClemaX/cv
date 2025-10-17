@@ -14,31 +14,31 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       - name: LaTeX compilation (english)
-        uses: dante-ev/latex-action@2023-A
+        uses: dante-ev/latex-action@2025-A
         with:
           root_file: cv-english.tex
           extra_system_packages: ghostscript
           entrypoint: ./release.sh
 
       - name: LaTeX compilation (french)
-        uses: dante-ev/latex-action@2023-A
+        uses: dante-ev/latex-action@2025-A
         with:
           root_file: cv-french.tex
           extra_system_packages: ghostscript
           entrypoint: ./release.sh
       
       - name: LaTeX compilation (german)
-        uses: dante-ev/latex-action@2023-A
+        uses: dante-ev/latex-action@2025-A
         with:
           root_file: cv-german.tex
           extra_system_packages: ghostscript
           entrypoint: ./release.sh
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v4.6.2
         with:
           name: cv
           path: |
@@ -50,7 +50,7 @@ jobs:
             cv-german.png
 
       - name: Release PDF and PNG files
-        uses: softprops/action-gh-release@v0.1.15
+        uses: softprops/action-gh-release@v2.4.1
         with:
           files: |
             cv-english.pdf
